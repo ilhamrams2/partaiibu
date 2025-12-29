@@ -52,10 +52,10 @@ export function Hero() {
               </p>
 
               <div className="flex flex-wrap gap-4">
-                <button className="bg-red-600 text-white px-8 py-4 rounded-full hover:bg-red-700 transition-colors shadow-lg hover:shadow-xl">
+                <button className="bg-red-600 text-white px-8 py-4 rounded-full hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105">
                   Daftar Sekarang
                 </button>
-                <button className="bg-white text-red-600 px-8 py-4 rounded-full border-2 border-red-600 hover:bg-red-50 transition-colors">
+                <button className="bg-white text-red-600 px-8 py-4 rounded-full border-2 border-red-600 hover:bg-red-50 transition-all duration-300 hover:scale-105 hover:shadow-lg">
                   Pelajari Lebih Lanjut
                 </button>
               </div>

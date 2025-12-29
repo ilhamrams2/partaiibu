@@ -21,7 +21,7 @@ export function Gallery() {
         <div className="grid md:grid-cols-3 gap-6 mb-12">
           <div className="relative rounded-2xl overflow-hidden shadow-xl group">
             <ImageWithFallback 
-              src="https://images.unsplash.com/photo-1608613646347-7b8fe51b675f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRvbmVzaWFuJTIwbW90aGVyJTIwZmFtaWx5fGVufDF8fHx8MTc2MzcwNTI4NHww&ixlib=rb-4.1.0&q=80&w=1080"
+              src="https://images.unsplash.com/photo-1511895426328-dc8714191300?w=800&auto=format&fit=crop&q=80"
               alt="Indonesian Family"
               className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
             />
@@ -35,7 +35,7 @@ export function Gallery() {
 
           <div className="relative rounded-2xl overflow-hidden shadow-xl group">
             <ImageWithFallback 
-              src="https://images.unsplash.com/photo-1761516126131-bca685d38df5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRvbmVzaWFuJTIwY3VsdHVyZSUyMGJhdGlrfGVufDF8fHx8MTc2MzcwNTI4NHww&ixlib=rb-4.1.0&q=80&w=1080"
+              src="https://images.unsplash.com/photo-1604999333679-b86d54738315?w=800&auto=format&fit=crop&q=80"
               alt="Indonesian Culture"
               className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
             />
@@ -49,7 +49,7 @@ export function Gallery() {
 
           <div className="relative rounded-2xl overflow-hidden shadow-xl group">
             <ImageWithFallback 
-              src="https://images.unsplash.com/photo-1663580109859-b63aafcb275e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRvbmVzaWElMjBmbGFnJTIwbGFuZHNjYXBlfGVufDF8fHx8MTc2MzcwNTI4NHww&ixlib=rb-4.1.0&q=80&w=1080"
+              src="https://images.unsplash.com/photo-1624526267942-ab0ff8a3e972?w=800&auto=format&fit=crop&q=80"
               alt="Indonesia Flag"
               className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
             />
@@ -81,10 +81,10 @@ export function Gallery() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-red-600 px-8 py-4 rounded-full hover:bg-gray-100 transition-colors shadow-lg">
+              <button className="bg-white text-red-600 px-8 py-4 rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105">
                 Daftar Sebagai Anggota
               </button>
-              <button className="bg-red-500 text-white px-8 py-4 rounded-full border-2 border-white hover:bg-red-400 transition-colors">
+              <button className="bg-red-500 text-white px-8 py-4 rounded-full border-2 border-white hover:bg-red-400 transition-all duration-300 hover:scale-105 hover:shadow-lg">
                 Hubungi Kami
               </button>
             </div>

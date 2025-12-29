@@ -8,21 +8,21 @@ export function News() {
       excerpt: 'Program beasiswa pendidikan gratis diluncurkan untuk membantu anak-anak Indonesia dari keluarga kurang mampu...',
       date: '18 November 2025',
       category: 'Program',
-      image: 'https://images.unsplash.com/photo-1761516126131-bca685d38df5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRvbmVzaWFuJTIwY3VsdHVyZSUyMGJhdGlrfGVufDF8fHx8MTc2MzcwNTI4NHww&ixlib=rb-4.1.0&q=80&w=1080'
+      image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&auto=format&fit=crop&q=80'
     },
     {
       title: 'Kunjungan ke 10 Provinsi: Mendengar Aspirasi Ibu-Ibu Indonesia',
       excerpt: 'Ketua Umum Partai Ibu melakukan kunjungan kerja ke berbagai provinsi untuk mendengar langsung aspirasi masyarakat...',
       date: '15 November 2025',
       category: 'Kegiatan',
-      image: 'https://images.unsplash.com/photo-1608613646347-7b8fe51b675f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRvbmVzaWFuJTIwbW90aGVyJTIwZmFtaWx5fGVufDF8fHx8MTc2MzcwNTI4NHww&ixlib=rb-4.1.0&q=80&w=1080'
+      image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&auto=format&fit=crop&q=80'
     },
     {
       title: 'UMKM Binaan Partai Ibu Raih Omzet Miliaran Rupiah',
       excerpt: 'Ratusan UMKM yang dibina Partai Ibu berhasil meningkatkan omzet hingga ratusan persen dalam 6 bulan terakhir...',
       date: '12 November 2025',
       category: 'Prestasi',
-      image: 'https://images.unsplash.com/photo-1612017888429-0110c5f45334?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRvbmVzaWFuJTIwcGVvcGxlJTIwY29tbXVuaXR5fGVufDF8fHx8MTc2MzcwNTQ4OHww&ixlib=rb-4.1.0&q=80&w=1080'
+      image: 'https://images.unsplash.com/photo-1556740758-90de374c12ad?w=800&auto=format&fit=crop&q=80'
     }
   ];
 
@@ -86,7 +86,7 @@ export function News() {
 
         {/* All News Button */}
         <div className="text-center">
-          <button className="bg-red-600 text-white px-8 py-4 rounded-full hover:bg-red-700 transition-colors shadow-lg inline-flex items-center gap-2">
+          <button className="bg-red-600 text-white px-8 py-4 rounded-full hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105 inline-flex items-center gap-2">
             <span>Lihat Semua Berita</span>
             <ArrowRight className="w-5 h-5" />
           </button>
