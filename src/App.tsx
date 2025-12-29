@@ -1,31 +1,45 @@
-import { Header } from './components/Header';
-import { Hero } from './components/Hero';
-import { Values } from './components/Values';
-import { About } from './components/About';
-import { ChairmanMessage } from './components/ChairmanMessage';
-import { Statistics } from './components/Statistics';
-import { VisiMisi } from './components/VisiMisi';
-import { Programs } from './components/Programs';
-import { Timeline } from './components/Timeline';
-import { Gallery } from './components/Gallery';
-import { JoinUs } from './components/JoinUs';
-import { Footer } from './components/Footer';
+import { useState, useEffect } from 'react';
+import { HomePage } from './pages/HomePage';
+import { AboutPage } from './pages/AboutPage';
+import { VisionMissionPage } from './pages/VisionMissionPage';
+import { ProgramsPage } from './pages/ProgramsPage';
+import { GalleryPage } from './pages/GalleryPage';
+import { ContactPage } from './pages/ContactPage';
 
 export default function App() {
-  return (
-    <div className="min-h-screen">
-      <Header />
-      <Hero />
-      <ChairmanMessage />
-      <Values />
-      <Statistics />
-      <About />
-      <VisiMisi />
-      <Programs />
-      <Timeline />
-      <Gallery />
-      <JoinUs />
-      <Footer />
-    </div>
-  );
+  const [currentPage, setCurrentPage] = useState('home');
+
+  useEffect(() => {
+    // Handle hash-based routing
+    const handleHashChange = () => {
+      const hash = window.location.hash.slice(1) || 'home';
+      setCurrentPage(hash);
+    };
+
+    // Set initial page
+    handleHashChange();
+
+    // Listen for hash changes
+    window.addEventListener('hashchange', handleHashChange);
+    
+    return () => {
+      window.removeEventListener('hashchange', handleHashChange);
+    };
+  }, []);
+
+  // Render different pages based on current page
+  switch (currentPage) {
+    case 'tentang':
+      return <AboutPage />;
+    case 'visi-misi':
+      return <VisionMissionPage />;
+    case 'program':
+      return <ProgramsPage />;
+    case 'galeri':
+      return <GalleryPage />;
+    case 'kontak':
+      return <ContactPage />;
+    default:
+      return <HomePage />;
+  }
 }
